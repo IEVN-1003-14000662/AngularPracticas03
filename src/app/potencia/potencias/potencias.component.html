@@ -1,0 +1,36 @@
+
+<div>
+<p>potencias works!</p>
+<div>
+    <div class="row">
+    <div class="col_6">
+        <td></td>
+        <div class="mb-3 row">
+            <label for="num1" class="col-sm-2 col-form-label">Numero1</label>
+            <div class="col-sm-10">
+                <input name="num1" [(ngModel)]="NumA" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="num2" class="col-sm-2 col-form-label">Numero2</label>
+            <div class="col-sm-10">
+                <input name="num2" [(ngModel)]="NumB" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <button (click)="calcular()" class="btn btn-primary">Calcular</button>
+        </div>
+    </div>
+    <div class="col_6">
+        <h2>Operacion Realizada:{{resultadoOper}}</h2>
+        <br>
+        <h2>Resultado:{{resultado}}</h2>   
+        <br>
+        <h2>{{calcular()}}</h2> 
+    </div>
+</div>
+</div>
+</div>
+
+
